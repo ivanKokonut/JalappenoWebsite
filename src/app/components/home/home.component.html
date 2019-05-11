@@ -1,0 +1,312 @@
+<nav class="navbar navbar-expand-md navbar-dark Encode fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <div class="logo-box">
+                <img src="../../../assets/images/logo.png" alt="" class="img-fluid">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+        <div class="collapse navbar-collapse Lato" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto pointer">
+                <li class="nav-item pr-3 active">
+                    <a class="nav-link" [ngx-scroll-to]="'#aboutUs'" [ngx-scroll-to-duration]="ngxScrollToDuration" [ngx-scroll-to-offset]="600">About</a>
+                </li>
+                <li class="nav-item  pr-3 active">
+                    <a class="nav-link" [ngx-scroll-to]="'#thisServices'" [ngx-scroll-to-duration]="ngxScrollToDuration" [ngx-scroll-to-offset]="600">Services</a>
+                </li>
+                <li class="nav-item pr-3 active">
+                    <a class="nav-link" [ngx-scroll-to]="'#contactUs'" [ngx-scroll-to-duration]="ngxScrollToDuration">Contact</a>
+                </li>
+                <li class="nav-item pr-3 active">
+                    <a class="nav-link" [ngx-scroll-to]="'#clients'" [ngx-scroll-to-duration]="ngxScrollToDuration " [ngx-scroll-to-offset]="650">Clients</a>
+                </li>
+                <li class="nav-item  active">
+                    <a class="nav-link">Careers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+
+<section id="main" class="Encode">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7 pt-5 pl-5">
+                <h1 id="first" class="animated invisible" (nguiInview)="inView('first', '1', 'fadeIn', 'fadeOut')">
+                    <span> We are the Tech  </span> <br> <span>
+                      Solution that moves your</span> <span>
+                            business forward   </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <particles [params]="particleHeaderParams" [style]="particleHeaderStyle" [width]="width" [height]="height"></particles>
+</section>
+
+<section id="section2" class="text-center white position-relative mt-5 mt-md-0 py-5">
+    <div class="container">
+        <div class="row pb-5">
+            <div id="second" (nguiInview)="inView('second', '2', 'fadeInUp', 'fadeOut')" class="col-12 col-md-8 offset-md-2 animated invisible">
+                <h1 id="aboutUs" class="Encode bold">
+                    About Us
+                </h1>
+                <p class="Lato">
+                    We are a highly motivated, agile and spirited company that understands and operates in the world’s digital community. With a talented team with years of experience in the tech field, we still remain approachable and flexible to stay close to our clients.
+                    We believe in empowerment, honesty and innovation, delivering software products to make your business stronger, safer, and more agile.
+                    <br><br> Our clients come to us with a project in mind and hire us to custom build that idea for them.
+                </p>
+                <button class="mt-5 contact">
+                   <a [ngx-scroll-to]="'#contactUs'" [ngx-scroll-to-duration]="ngxScrollToDuration" class="Lato">CONTACT US</a> 
+                </button>
+            </div>
+        </div>
+        <div class="row py-5 mt-2">
+            <div class="col-12 py-5">
+                <h1 class="Encode bold">
+                    We specialize in
+                </h1>
+            </div>
+            <div id="thisServices" (nguiInview)="inView('thisServices', '3', 'fadeInUp', 'fadeOut')" class="col-12 col-md-10 offset-md-1 animated invisible">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="feature-box d-flex flex-column align-items-center justify-content-center">
+                            <div class="img-box">
+                                <img class="img-fluid" src="../../../assets/images/icon1.png" alt="Icon 1">
+                            </div>
+                            <div class="text-box Lato">
+                                <div class="subtitle bold py-3">Mobile Apps</div>
+                                <p class="light">
+                                    We develop high-quality applications for iOS and Android using both native and hybrid frameworks. Giving support and integra- ting mobile devices with other technologies like bluetooth, QR codes or geolocation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="feature-box d-flex flex-column align-items-center justify-content-center">
+                            <div class="img-box">
+                                <img class="img-fluid" src="../../../assets/images/icon2.png" alt="Icon 2">
+                            </div>
+                            <div class="text-box Lato">
+                                <div class="subtitle bold py-3">Web Development</div>
+                                <p class="light">
+                                    Full stack, front end, back end, servers, APIs, Html5, Android and iOS. We have the experience and skills to build it right, the first time. We also take on failed projects and bring them back to life.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="feature-box d-flex flex-column align-items-center justify-content-center">
+                            <div class="img-box">
+                                <img class="img-fluid" src="../../../assets/images/icon3.png" alt="Icon 3">
+                            </div>
+                            <div class="text-box Lato">
+                                <div class="subtitle bold py-3">Enterprise Software Development
+                                </div>
+                                <p class="light">
+                                    We've worked with both small businesses and big companies to develop and deploy tailored enterprise solutions. From zero to hero!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="thisServices2" (nguiInview)="inView('thisServices2', '4', 'fadeInUp', 'fadeOut')" class="col-12 col-md-6 offset-md-3 pt-5 animated invisible">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="feature-box d-flex flex-column align-items-center justify-content-center">
+                            <div class="img-box">
+                                <img class="img-fluid" src="../../../assets/images/icon4.png" alt="Icon 4">
+                            </div>
+                            <div class="text-box Lato">
+                                <div class="subtitle bold py-3">Animation Services</div>
+                                <p class="light">
+                                    Our creative arm. 2D & 3D animations or creative assets for videos, websites, product demos, training & more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="feature-box d-flex flex-column align-items-center justify-content-center">
+                            <div class="img-box">
+                                <img class="img-fluid" src="../../../assets/images/icon5.png" alt="Icon 5">
+                            </div>
+                            <div class="text-box Lato">
+                                <div class="subtitle bold py-3">Gaming</div>
+                                <p class="light">
+                                    From app to web, we can design a fun and engaging high-quality experience based on any requirement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="fifth" class="row py-5">
+            <div id="clients" class="col-12 py-5">
+                <h1 class="Encode bold">
+                    Clients
+                </h1>
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 d-flex flex-row justify-content-center align-items-center">
+                <div class="px-5">
+                    <img class="img-fluid" src="../../../assets/images/company-logo-1.png" alt="">
+                </div>
+                <div class="px-5">
+                    <img class="img-fluid" src="../../../assets/images/company-logo-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <particles [params]="particleBodyParams" [style]="particleBodyStyle" [width]="width" [height]="height"></particles>
+
+</section>
+
+<section id="contactUs" class="text-center py-5">
+    <div class="container">
+        <div class="row white">
+            <div class="col-12 py-5">
+                <h1 class="Encode bold">
+                    Contact Us
+                </h1>
+            </div>
+            <div class="col-12x col-md-6 pb-5">
+                <form id="contact-form" #forma="ngForm" (ngSubmit)="guardar(forma);" class="d-flex flex-column align-items-start justify-content-center">
+                    <div class="form-group input-box" [ngClass]="{'is-invalid': (name.errors?.required ||  name.errors?.minlength) && name.touched }">
+                        <input name="name" [(ngModel)]="contact.name" minlength="3" #name="ngModel" id="name" class="form-control" type="text" placeholder="Your name" required>
+                        <div *ngIf="name.errors?.required && name.touched" class="error-text">
+                            This field is required.
+                        </div>
+                        <div *ngIf="name.errors?.minlength && name.touched" class="error-text">
+                            Please enter a minimum of 3 characters
+                        </div>
+                    </div>
+                    <div class="form-group input-box">
+                        <input name="mail" [(ngModel)]="contact.mail" ngModel pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #mail="ngModel" id="email" class="form-control" type="email" placeholder="Your email" required>
+                        <div *ngIf="mail.errors?.required && mail.touched" class="error-text">
+                            This field is required.
+                        </div>
+                        <div *ngIf="mail.errors?.pattern && mail.touched" class="error-text">
+                            Please enter a valid email address.
+                        </div>
+                    </div>
+                    <div class="form-group input-box">
+                        <input name="phone" [(ngModel)]="contact.phone" ngModel #phone="ngModel" id="phone" class="form-control" type="text" placeholder="Phone">
+                        <div *ngIf="phone.errors?.minlength && phone.touched" class="error-text">
+                            Please enter a valid phone number
+                        </div>
+                    </div>
+                    <div class="form-group input-box">
+                        <textarea name="message" [(ngModel)]="contact.message" ngModel #message="ngModel" id="message" class="form-control" type="text" rows="5" placeholder="Requirements" required></textarea>
+                        <div *ngIf="message.errors?.required && message.touched" class="error-text">
+                            This field is required.
+                        </div>
+                        <div *ngIf="message.errors?.minlength && message.touched" class="error-text">
+                            Please enter a minimum of 3 characters
+                        </div>
+                    </div>
+                    <div id="btn-captcha" class="d-flex flex-row" style="width: 100%;">
+                        <div class="row">
+                            <div class="col-12 col-lg-5 d-flex flex-row justify-content-center justify-lg-content-start order-2 order-lg-1 pt-4 pt-md-0" style="min-width: 200px;">
+                                <button [disabled]="!forma.valid" type="submit" class="Lato send pointer">
+                                            SEND
+                                </button>
+                            </div>
+
+                            <div class="col-12 col-lg-7 order-1 order-lg-2 captcha-container text-center">
+                                <div style="display:inline-block; width: 304px;">
+                                    <re-captcha (resolved)=" resolved($event) " siteKey="6LdZCZ0UAAAAAIpkCA3rAXCLuW2Nvzfgva0rvPKZ "></re-captcha>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="success-message " class="text-left pt-3 d-none ">
+                        Your message have been sent!<br> We will contact you shortly.
+                    </div>
+
+                    <div id="error-message " class="text-left pt-3 d-none ">
+                        Your message have been sent!<br> We will contact you shortly.
+                    </div>
+
+                    <div id="captcha-message " class="text-left pt-3 d-none ">
+                        Please check the captcha.
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+<hr class="blueHr mx-5 ">
+
+<footer>
+    <div class="container white py-5 Lato ">
+        <div class="row ">
+            <div class="col-6 col-md-4 text-left ">
+                <div class="bold pb-2 ">
+                    Contact
+                </div>
+                <div class="light">
+                    <p>
+                        MX +52 1 55 3955 8952
+                        <br> <a href="mailto:roberto@ jalappeno.mx " class="pointer ">roberto@ jalappeno.mx</a>
+                        <br> www.jalappeño.com
+                    </p>
+                </div>
+                <div class="social-btns-box d-flex flex-row pointer ">
+                    <div class="social-btn ">
+                        <a href="https://www.facebook.com/Jalappe%C3%B1o-Technologies-341426909794679/ " target="_blank ">
+                            <img src="../../../assets/images/ic-fb.png " alt="Icon social media " class="img-fluid ">
+                        </a>
+                    </div>
+                    <div class="social-btn mx-2 ">
+                        <a href="https://www.instagram.com/jalappeno_mx/ " target="_blank ">
+                            <img src="../../../assets/images/ic-in.png " alt="Icon social media " class="img-fluid ">
+                        </a>
+                    </div>
+                    <div class="social-btn ">
+                        <a href="https://www.linkedin.com/company/jalappeno/about/ " target="_blank ">
+                            <img src="../../../assets/images/ic-lk.png " alt="Icon social media " class="img-fluid ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 text-left ">
+                <div class="bold pb-2 ">
+                    Quick Links
+                </div>
+                <div class="pointer light">
+                    <div [ngx-scroll-to]=" '#aboutUs' " [ngx-scroll-to-duration]="ngxScrollToDuration" [ngx-scroll-to-offset]="600">About</div>
+                    <div [ngx-scroll-to]=" '#thisServices' " [ngx-scroll-to-duration]="ngxScrollToDuration" [ngx-scroll-to-offset]="600">Services</div>
+                    <div [ngx-scroll-to]=" '#contactUs' " [ngx-scroll-to-duration]="ngxScrollToDuration ">Contact</div>
+                    <div [ngx-scroll-to]="'#clients'" [ngx-scroll-to-duration]="ngxScrollToDuration " [ngx-scroll-to-offset]="650">Clients</div>
+                    <div>Careers</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end pt-3 pt-md-0 ">
+                <div class="logo-box ">
+                    <img src="../../../assets/images/logo.png " alt=" " class="img-fluid ">
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5 ">
+            <div class="col-12 pt-5 pb-2 ">
+                <div class="text-center blue ">
+                    <small>
+                        Copyright © 2019 Jalappeño. All rights reserved.
+                     </small>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

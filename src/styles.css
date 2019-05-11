@@ -1,0 +1,147 @@
+    @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700');
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+    body {
+        overflow-x: hidden;
+    }
+    
+    p {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .relative {
+        position: relative;
+    }
+    
+    .absolute {
+        position: absolute;
+    }
+    
+    .fixed {
+        position: fixed;
+    }
+    
+    .z-index-top {
+        z-index: 1000;
+    }
+    
+    .z-index-middle {
+        z-index: 500;
+    }
+    
+    .z-index-bottom {
+        z-index: 1;
+    }
+    
+    .width-100 {
+        width: 100%;
+    }
+    
+    .spacingY-100 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .text-22 {
+        font-size: 22px;
+    }
+    
+    .Encode {
+        font-family: 'Encode Sans Condensed', sans-serif;
+    }
+    
+    .Lato {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+    
+    .light {
+        font-weight: lighter;
+    }
+    
+    .white {
+        color: white;
+    }
+    
+    .pointer {
+        cursor: pointer;
+    }
+    
+    .card {
+        background-color: unset;
+        background-clip: border-box;
+        border: none;
+        border-radius: none;
+    }
+    
+    .navbar {
+        background-color: rgba(0, 0, 0, 1);
+        text-transform: uppercase;
+        font-weight: lighter;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        z-index: 100000;
+    }
+    
+    .navbar .container-fluid {
+        max-width: 1300px;
+    }
+    
+    button:not(.navbar-toggler) {
+        background-color: #213fc8;
+        color: white;
+        border-radius: 0;
+        border: 0;
+        width: 100%;
+        font-size: 22px;
+        height: 60px;
+    }
+    
+    button.contact {
+        max-width: 243px;
+    }
+    
+    button.send {
+        max-width: 180px;
+    }
+    
+    button>a,
+    button>a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .blue {
+        color: rgba(0, 48, 255, 1);
+    }
+    /* re-captcha>div {
+    transform: scale(0.77);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+} */
+    
+    #btn-captcha>.col-6,
+    #btn-captcha>.col-5 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    @media (max-width: 767px) {
+        re-captcha>div {
+            transform: scale(1);
+        }
+        nav>.container {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        re-captcha>div {
+            transform: scale(0.77);
+            transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+        }
+    }

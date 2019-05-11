@@ -1,0 +1,108 @@
+#main {
+    color: #ffffff;
+    height: 100vh;
+    background-image: url('../../../assets/images/mano2.png');
+    background-position: 50vh bottom;
+    background-repeat: no-repeat;
+    background-size: 45vw;
+    padding-top: 10vh;
+}
+
+#main h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.card {
+    background-color: unset;
+    border: 0;
+    border-radius: none;
+}
+
+.feature-box {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* .feature-box:hover {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -4px 10px 12px 0px rgba(0, 48, 255, 0.67);
+    -moz-box-shadow: -4px 10px 12px 0px rgba(0, 48, 255, 0.67);
+    box-shadow: -4px 10px 12px 0px rgba(0, 48, 255, 0.67);
+} */
+
+.feature-box .img-box {
+    max-width: 100px;
+    width: 100%;
+    opacity: 0.5
+}
+
+.feature-box:hover .img-box {
+    opacity: 1
+}
+
+.feature-box .text-box .subtitle {
+    font-size: 20px;
+}
+
+.feature-box .text-box .light {
+    font-size: 16px;
+}
+
+.input-box {
+    width: 100%;
+}
+
+hr.blueHr {
+    border-top: 2px solid #213fc8;
+}
+
+.social-btn {
+    max-width: 36px;
+    width: 100%;
+}
+
+#contactUs {
+    background-image: url('../../../assets/images/map.png');
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    background-position: center;
+}
+
+#contact-form input,
+#contact-form textarea {
+    border-radius: 0;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+.logo-box {
+    max-width: 100px;
+    width: 100%;
+}
+
+.error-text {
+    padding-top: 10px;
+}
+
+#btn-captcha>.col-6,
+#btn-captcha>.col-5 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media (min-width: 576px) {}
+
+@media (max-width: 767px) {
+    #main {
+        background-size: 100vw;
+        background-position: center bottom;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
